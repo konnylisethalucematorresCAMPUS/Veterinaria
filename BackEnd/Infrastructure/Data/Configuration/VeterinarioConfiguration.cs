@@ -28,6 +28,7 @@ public class VeterinarioConfiguration : IEntityTypeConfiguration<Veterinario>
             .HasMaxLength(40)
             .IsRequired();
 
+
         builder.Property(p => p.Telefono)
             .HasColumnName("Telefono")
             .HasColumnType("int")
