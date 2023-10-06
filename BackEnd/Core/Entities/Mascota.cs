@@ -10,7 +10,7 @@ public class Mascota : BaseEntity
     public int RazaId { get; set; }
     public Raza? Razas { get; set; }
 
-    public string? Nombre { get; set; }
+    public string ? Nombre { get; set; }
     public DateTime FechaNacimiento { get; set; }
 
     public ICollection<Cita>? Citas { get; set; }

@@ -9,7 +9,7 @@ public class DetalleMovimiento : BaseEntity
     public int MovimientoMedicamentoId { get; set; }
     public MovimientoMedicamento? MovimientosMedicamentos { get; set; }
 
-    public long Precio { get; set; }
+    public int Precio { get; set; }
 
 
 }

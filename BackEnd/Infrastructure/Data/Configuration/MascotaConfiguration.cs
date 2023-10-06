@@ -19,9 +19,9 @@ public class MascotaConfiguration : IEntityTypeConfiguration<Mascota>
             .HasColumnType("int")
             .IsRequired();
 
-            builder.HasOne(p => p.Propietarios)//Nombre de la tabla a la que estamos llamando en plural 
-            .WithMany(p => p.Mascotas)// nombre de tabla en la que estamos trabajando plural 
-            .HasForeignKey(p => p.PropietarioId); //Nombre del Id de la FK
+            builder.HasOne(p => p.Propietarios)
+            .WithMany(p => p.Mascotas)
+            .HasForeignKey(p => p.PropietarioId);
 
 
         builder.Property(p => p.EspecieId)
@@ -53,5 +53,6 @@ public class MascotaConfiguration : IEntityTypeConfiguration<Mascota>
             .HasColumnName("FechaNacimiento")
             .HasColumnType("datetime")
             .IsRequired();
+
     }
 }
