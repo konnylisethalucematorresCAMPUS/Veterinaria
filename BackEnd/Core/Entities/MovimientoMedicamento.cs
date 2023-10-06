@@ -3,7 +3,7 @@ using System.Data;
 namespace Core.Entities;
 
     public class MovimientoMedicamento : BaseEntity{
-      public int IdMedicamento { get; set; }
+      public int MedicamentoId { get; set; }
       public Medicamento ? Medicamentos { get; set;}
        
       public int Cantidad { get; set; }

@@ -4,7 +4,7 @@ namespace Core.Entities;
         public string ? Nombre { get; set; }
         public string ? Direccion { get; set; }
         public int Telefono { get; set; }
-        public ICollection<MedicamentoProveedor> ? MedicamentodProveedores { get; set; }
+        public ICollection<MedicamentoProveedor> ? MedicamentosProveedores { get; set; }
 
 
     }

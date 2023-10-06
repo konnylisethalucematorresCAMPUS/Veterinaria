@@ -1,7 +1,7 @@
 namespace Core.Entities;
     public class Raza : BaseEntity
     {
-        public int IdEspecie { get; set; }
+        public int EspecieId { get; set; }
         public Especie ? Especies { get; set; }
         
         public string ? Nombre { get; set; }
